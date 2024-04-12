@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager App - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left; /* Alineación del texto a la izquierda */
+        }
+        h1 {
+            color: #007bff;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        ul {
+            margin-left: 30px; /* Espacio a la izquierda de la lista */
+        }
+        li {
+            margin-bottom: 20px; /* Espacio entre elementos de la lista */
+        }
+        .logo {
+            width: 3cm;
+            height: 3cm;
+        }
+    </style>
+</head>
+<body>
+    <img src="{% static 'TaskManagerApp/images/transparent_logo1.png' %}" alt="Logo" class="logo">
+
+    <div class="container">
+        <h1>Welcome to the Task Manager App!</h1>
+        <p>This is the home page of our Task Manager application.</p>
+        <p><strong>Task Manager:</strong> A web application where users can register, organize, and manage their daily tasks. It includes:</p>
+        <ul>
+            <li>Models for tasks, users, and categories</li>
+            <li>Forms to add new tasks</li>
+            <li>Search functionality for tasks by name or category</li>
+            <li>Views to see pending and completed tasks</li>
+            <!-- Agrega más elementos de la lista según sea necesario -->
+        </ul>
+    </div>
+</body>
+</html>
